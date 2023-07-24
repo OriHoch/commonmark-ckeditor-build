@@ -84,6 +84,7 @@
     "test": "jest --config=config/jest.config.js"
   },
   "dependencies": {
+    "ckeditor5-direction": "^1.0.1",
     "eslint": "^8.41.0"
   }
 }

@@ -40,6 +40,7 @@ import { ImageResize } from '@ckeditor/ckeditor5-image';
 import OpCustomCssClassesPlugin from "./plugins/op-custom-css-classes-plugin";
 import { ImageBlock } from '@ckeditor/ckeditor5-image';
 import { ImageInline } from '@ckeditor/ckeditor5-image';
+import Direction from 'ckeditor5-direction/src/direction';
 
 // We divide our plugins into separate concerns here
 // in order to enable / disable each group by configuration
@@ -97,6 +98,8 @@ export const builtinPlugins = [
 	OPMacroListPlugin,
 
 	OpCustomCssClassesPlugin,
+
+	Direction
 ].concat(
 	// OpenProject Macro plugin group
 	opMacroPlugins,
