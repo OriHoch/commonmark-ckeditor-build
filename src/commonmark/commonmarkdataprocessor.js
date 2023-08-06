@@ -190,6 +190,11 @@ export default class CommonMarkDataProcessor {
 			replacement: ( _content, node ) => node.outerHTML,
 		});
 
-		return turndownService.turndown( domFragment );
+		turndownService.addRule('keep-p', {
+			filter: [ 'p' ],
+			replacement: ( _content, node ) => node.outerHTML
+		});
+
+		return turndownService.turndown(domFragment);
 	}
 }
